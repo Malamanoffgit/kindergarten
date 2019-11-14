@@ -30,12 +30,16 @@
 html {
   font-size: 10px;
 }
-.container{
-  max-width: 1140px;
-  margin: 0 auto;
-}
 section {
   padding-top: 5rem;
+}
+header {
+  padding: 1rem 0;
+}
+/* классы */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 /* миксины шрифтов */
 /* цвета */
@@ -59,10 +63,54 @@ h3 {
   font-size: 3.2rem;
   text-transform: uppercase;
 }
+menu,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* навигационные сылки */
+.link {
+  font-family: 'GothamPro-bold', sans-serif;
+  font-size: 1.8rem;
+  color: #61c0bf;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+.link:before {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0.2rem;
+  background: #61c0bf;
+}
+.link:hover:before {
+  width: 100%;
+  transition: width 0.4s ease;
+}
 /* кнопки */
 .btn-main {
   font-family: 'GothamPro-bold', sans-serif;
   padding: 16rem 17rem;
   color: #ffffff;
   font-size: 1.6rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .navigation .toggle-menu {
+  display: none;
+}
+.header .navigation-menu {
+  display: flex;
+}
+.header .navigation-menu li {
+  margin-left: 3.5rem;
 }
