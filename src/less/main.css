@@ -21,4 +21,41 @@
   font-style: normal;
 }
 /* миксины шрифтов */
-/* */
+/* цвета */
+/* типографика */
+body {
+  font-family: 'GothamPro-light', sans-serif;
+  font-size: 1.6rem;
+}
+h1 {
+  font-family: 'GothamPro-bold', sans-serif;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+}
+h2 {
+  font-family: 'GothamPro-bold', sans-serif;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+}
+h3 {
+  font-family: 'GothamPro-bold', sans-serif;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+}
+/* кнопки */
+.btn-main {
+  font-family: 'GothamPro-bold', sans-serif;
+  padding: 16rem 17rem;
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+/* цвета */
+/*базовые стили*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
