@@ -13,15 +13,16 @@
 @background-block: #f3f3f3;
 @background-btn: #61c0bf;
 @white: #ffffff;
+@bnt-hover:  #ffc34b;
 /* типографика */
 body{
  .text-light();
  font-size: 1.6rem;
 }
+/* заголовки */
 h1{
  .text-bold();
  font-size: 2.8rem;
- text-transform: uppercase;
 }
 h2{
  .text-bold();
@@ -34,6 +35,7 @@ h3{
  text-transform: uppercase;
 }
 
+/* меню */
 menu, ul{
  list-style: none;
 }
@@ -47,7 +49,6 @@ a{
  color: @background-btn;
  text-transform: uppercase;
  position: relative;
- overflow: hidden;
 
  &:before{
    position: absolute;
@@ -65,9 +66,19 @@ a{
   transition: width 0.4s ease;
 }
 /* кнопки */
-.btn-main{
+.main-btn{
  .text-bold();
- padding: 16rem 17rem;
+ padding: 1.6rem 1.7rem;
  color: @white;
+ background: @background-btn;
+ font-size: 1.6rem;
+ text-transform: uppercase;
+   &:hover{
+    background: @bnt-hover;
+    transition: all 0.3s;
+   }
+}
+/* блок main*/
+.main-subtitle{
  font-size: 1.6rem;
 }
