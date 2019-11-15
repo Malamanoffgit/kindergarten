@@ -39,6 +39,13 @@ header {
 main {
   padding: 17rem 1rem;
 }
+menu,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 /* классы */
 .container {
   max-width: 1140px;
@@ -68,14 +75,6 @@ h3 {
   font-family: 'GothamPro-bold', sans-serif;
   font-size: 2.3rem;
   text-transform: uppercase;
-}
-/* меню */
-menu,
-ul {
-  list-style: none;
-}
-a {
-  text-decoration: none;
 }
 /* навигационные сылки */
 .link {
@@ -198,6 +197,26 @@ h2:hover:before {
   margin-bottom: 1rem;
 }
 .section-groups__content .childrens-group-description__subtitle {
-  font-size: 2.3rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
+}
+.section-value__title {
+  text-align: center;
+  margin-bottom: 15rem;
+}
+.section-value-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section-value-content__box {
+  padding: 2rem 8rem 10rem 8rem;
+  text-align: center;
+}
+.section-value-content__box .title {
+  margin: 4rem 0;
+}
+.section-value-content__box .description {
+  width: 220px;
+  font-size: 1.8rem;
 }
