@@ -37,7 +37,7 @@ header {
   padding: 1rem 0;
 }
 main {
-  padding: 17rem 0;
+  padding: 17rem 1rem;
 }
 /* классы */
 .container {
@@ -66,7 +66,7 @@ h2 {
 }
 h3 {
   font-family: 'GothamPro-bold', sans-serif;
-  font-size: 3.2rem;
+  font-size: 2.3rem;
   text-transform: uppercase;
 }
 /* меню */
@@ -80,10 +80,11 @@ a {
 /* навигационные сылки */
 .link {
   font-family: 'GothamPro-bold', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #61c0bf;
   text-transform: uppercase;
   position: relative;
+  /* line .link*/
 }
 .link:before {
   position: absolute;
@@ -134,6 +135,7 @@ h2:hover:before {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1rem;
 }
 .header .navigation .toggle-menu {
   display: none;
@@ -154,6 +156,9 @@ h2:hover:before {
 .main-content__description {
   padding-top: 8rem;
   padding-left: 6rem;
+}
+.main-content-img img {
+  width: 80%;
 }
 .main-title {
   margin-bottom: 5.8rem;
@@ -178,8 +183,21 @@ h2:hover:before {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+.section-groups__content .childrens-group:nth-child(even) {
+  justify-content: flex-end;
+}
 .section-groups__content .childrens-group img {
   width: 10rem;
   height: auto;
   margin: 0 3rem;
+}
+.section-groups__content .childrens-group-description {
+  width: 204px;
+}
+.section-groups__content .childrens-group-description__title {
+  margin-bottom: 1rem;
+}
+.section-groups__content .childrens-group-description__subtitle {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
 }
