@@ -60,6 +60,9 @@ h2 {
   font-family: 'GothamPro-bold', sans-serif;
   font-size: 3.2rem;
   text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  display: inline;
 }
 h3 {
   font-family: 'GothamPro-bold', sans-serif;
@@ -113,6 +116,20 @@ a {
 .main-subtitle {
   font-size: 1.6rem;
 }
+/* line h2*/
+h2:before {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  content: '';
+  width: 0;
+  height: 0.2rem;
+  background: #61c0bf;
+}
+h2:hover:before {
+  width: 100%;
+  transition: width 0.4s ease;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -134,7 +151,7 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.main-content__text {
+.main-content__description {
   padding-top: 8rem;
   padding-left: 6rem;
 }
@@ -143,4 +160,26 @@ a {
 }
 .main-subtitle {
   margin-bottom: 5.8rem;
+}
+.section-groups__title {
+  text-align: center;
+  margin-bottom: 12rem;
+}
+.section-groups__content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+}
+.section-groups__content .childrens-group {
+  display: flex;
+  padding: 40px 0;
+  margin: 15px;
+  width: calc(50% - 30px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.section-groups__content .childrens-group img {
+  width: 10rem;
+  height: auto;
+  margin: 0 3rem;
 }

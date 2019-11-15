@@ -28,10 +28,13 @@ h2{
  .text-bold();
  font-size: 3.2rem;
  text-transform: uppercase;
+ position: relative;
+ overflow: hidden;
+ display: inline;
 }
 h3{
  .text-bold();
- font-size: 3.2rem;
+ font-size: 2rem;
  text-transform: uppercase;
 }
 
@@ -81,4 +84,18 @@ a{
 /* блок main*/
 .main-subtitle{
  font-size: 1.6rem;
+}
+/* line h2*/
+h2:before{
+   position: absolute;
+   bottom: -2px;
+   left: 0;
+   content: '';
+   width: 0;
+   height: 0.2rem;
+   background: @background-btn;
+}
+h2:hover:before{
+ width: 100%;
+ transition: width 0.4s ease;
 }
