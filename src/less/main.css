@@ -50,6 +50,7 @@ a {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  overflow: auto;
 }
 /* миксины шрифтов */
 /* цвета */
@@ -130,19 +131,25 @@ h2:hover:before {
   width: 100%;
   transition: width 0.4s ease;
 }
-.header {
+.section-top {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 1000;
+}
+.section-top .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
 }
-.header .navigation .toggle-menu {
+.section-top .header .navigation .toggle-menu {
   display: none;
 }
-.header .navigation-menu {
+.section-top .header .navigation-menu {
   display: flex;
 }
-.header .navigation-menu li {
+.section-top .header .navigation-menu li {
   margin-left: 3.5rem;
 }
 .main {
