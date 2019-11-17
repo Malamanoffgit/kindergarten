@@ -9,7 +9,7 @@ html {
   font-size: 10px;
 }
 section {
-  padding-top: 5rem;
+  padding: 7rem 0;
 }
 header {
   padding: 1rem 0;
@@ -28,4 +28,30 @@ a {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+/*слайдер slick*/
+.slick-active {
+  outline: none;
+}
+.prev {
+  width: 30px;
+  height: 36px;
+  z-index: 99;
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: -4%;
+  background: url(../img/slick-img/slick-btn/prev.png) center no-repeat;
+  outline: none;
+}
+.next {
+  width: 30px;
+  height: 36px;
+  z-index: 99;
+  border: none;
+  position: absolute;
+  top: 50%;
+  right: -4%;
+  background: url(../img/slick-img/slick-btn/next.png) center no-repeat;
+  outline: none;
 }

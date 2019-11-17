@@ -31,7 +31,7 @@ html {
   font-size: 10px;
 }
 section {
-  padding-top: 5rem;
+  padding: 7rem 0;
 }
 header {
   padding: 1rem 0;
@@ -50,6 +50,32 @@ a {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+/*слайдер slick*/
+.slick-active {
+  outline: none;
+}
+.prev {
+  width: 30px;
+  height: 36px;
+  z-index: 99;
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: -4%;
+  background: url(../img/slick-img/slick-btn/prev.png) center no-repeat;
+  outline: none;
+}
+.next {
+  width: 30px;
+  height: 36px;
+  z-index: 99;
+  border: none;
+  position: absolute;
+  top: 50%;
+  right: -4%;
+  background: url(../img/slick-img/slick-btn/next.png) center no-repeat;
+  outline: none;
 }
 /* миксины шрифтов */
 /* цвета */
@@ -162,30 +188,32 @@ h2:hover:before {
   margin-top: 7rem;
   margin-left: 0.2rem;
 }
-.slick-active {
-  outline: none;
+/* блок reviews слайдер*/
+.section-reviews__title {
+  text-align: center;
+  margin-bottom: 8rem;
 }
-.prev {
-  width: 30px;
-  height: 36px;
-  z-index: 99;
-  border: none;
-  position: absolute;
-  top: 50%;
-  left: -4%;
-  background: url(../img/slick-img/slick-btn/prev.png) center no-repeat;
-  outline: none;
+.section-reviews-content__box {
+  text-align: center;
 }
-.next {
-  width: 30px;
-  height: 36px;
-  z-index: 99;
-  border: none;
-  position: absolute;
-  top: 50%;
-  right: -4%;
-  background: url(../img/slick-img/slick-btn/next.png) center no-repeat;
-  outline: none;
+.section-reviews-content__box img {
+  margin-bottom: 3rem;
+  margin-left: 0.2rem;
+}
+.section-reviews-content__box .title {
+  font-family: 'GothamPro-bold', sans-serif;
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+}
+.section-reviews-content__box .subtitle {
+  margin-bottom: 4rem;
+}
+.section-reviews-content__box .description {
+  font-family: 'GothamPro-light', sans-serif;
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.4rem;
 }
 .section-top {
   position: fixed;
@@ -214,6 +242,7 @@ h2:hover:before {
 .main-content {
   display: flex;
   justify-content: space-between;
+  margin-top: 15rem;
 }
 .main-content__description {
   padding-top: 8rem;
@@ -262,6 +291,9 @@ h2:hover:before {
 .section-groups__content .childrens-group-description__subtitle {
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+.section-value {
+  background: #f3f3f3;
 }
 .section-value__title {
   text-align: center;
