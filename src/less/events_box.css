@@ -1,0 +1,12 @@
+/* блок events слайдер*/
+.section-events__title {
+  text-align: center;
+  margin-bottom: 12rem;
+}
+.section-events-content__box {
+  text-align: center;
+}
+.section-events-content__box .title {
+  margin-bottom: 1.4rem;
+  font-size: 2rem;
+}
