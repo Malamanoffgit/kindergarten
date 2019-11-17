@@ -116,14 +116,49 @@
                 &__box{
                     padding: 2rem 8rem 10rem 8rem;
                     text-align: center;
-                    .title{
-                        margin: 4rem 0;
-                    }
-                    .description{
-                        width: 220px;
-                        font-size: 1.8rem;
-                    }
+                        .title{
+                            margin: 4rem 0;
+                        }
+                        .description{
+                            width: 220px;
+                            font-size: 1.8rem;
+                        }
                 }
             }
+}
+.footer{
+    background: @color-text-bg;
+        &-content{
+            display: flex;
+            justify-content: space-between;
+                &__box{
+                    color: @white;
+                        .title{
+                            .text-bold();
+                            margin-bottom: 1.8rem;
+                            font-size: 2.4rem;
+                        }
+                        .list{
+
+                            li{
+                                .text-light();
+                                margin-bottom: 0.7rem;
+                                color: @background-block;
+                                font-size: 1.4rem;
+                                
+                            }
+                        }
+                    &:first-child{
+
+                        .list{
+
+                            li{
+                                margin-bottom: 2.1rem;
+                                    
+                            }
+                        }
+                    }
+                }
+        }
 }
 
