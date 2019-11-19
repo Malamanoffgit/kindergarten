@@ -47,7 +47,7 @@ a {
   text-decoration: none;
 }
 footer {
-  padding: 5rem;
+  padding: 4rem;
 }
 /* классы */
 .container {
@@ -159,64 +159,52 @@ h2:hover:before {
   width: 100%;
   transition: width 0.4s ease;
 }
-/* блок events слайдер*/
-.section-events__title {
-  text-align: center;
-  margin-bottom: 12rem;
+/* шапка сайта */
+.section-top {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 1000;
 }
-.section-events-content {
-  position: relative;
+.section-top .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
 }
-.section-events-content__box {
-  text-align: center;
+.section-top .header .navigation .toggle-menu {
+  display: none;
 }
-.section-events-content__box .title {
+.section-top .header .navigation-menu {
+  display: flex;
+}
+.section-top .header .navigation-menu li {
+  margin-left: 3.5rem;
+}
+/* подвал сайта*/
+.footer {
+  background: #212121;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-content__box {
+  color: #ffffff;
+}
+.footer-content__box .title {
   font-family: 'GothamPro-bold', sans-serif;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.8rem;
   font-size: 2.4rem;
 }
-.section-events-content__box .subtitle {
+.footer-content__box .list li {
   font-family: 'GothamPro-light', sans-serif;
-  margin-bottom: 9rem;
-}
-.section-events-content__box .description {
-  font-family: 'GothamPro-light', sans-serif;
-  width: 80%;
-  height: 4.3rem;
-  margin: 0 auto;
+  margin-bottom: 0.7rem;
+  color: #f3f3f3;
   font-size: 1.4rem;
-  line-height: 1.5rem;
 }
-.section-events-content__box img {
-  margin-top: 7rem;
-  margin-left: 0.2rem;
-}
-/* блок reviews слайдер*/
-.section-reviews__title {
-  text-align: center;
-  margin-bottom: 8rem;
-}
-.section-reviews-content__box {
-  text-align: center;
-}
-.section-reviews-content__box img {
-  margin-bottom: 3rem;
-  margin-left: 0.2rem;
-}
-.section-reviews-content__box .title {
-  font-family: 'GothamPro-bold', sans-serif;
-  margin-bottom: 2rem;
-  font-size: 2.4rem;
-}
-.section-reviews-content__box .subtitle {
-  margin-bottom: 4rem;
-}
-.section-reviews-content__box .description {
-  font-family: 'GothamPro-light', sans-serif;
-  width: 80%;
-  margin: 0 auto;
-  text-align: left;
-  font-size: 1.4rem;
+.footer-content__box:first-child .list li {
+  margin-bottom: 2.1rem;
 }
 .section-top {
   position: fixed;
@@ -318,27 +306,62 @@ h2:hover:before {
   width: 220px;
   font-size: 1.8rem;
 }
-.footer {
-  background: #212121;
+/* блок events слайдер*/
+.section-events__title {
+  text-align: center;
+  margin-bottom: 12rem;
 }
-.footer-content {
-  display: flex;
-  justify-content: space-between;
+.section-events-content {
+  position: relative;
 }
-.footer-content__box {
-  color: #ffffff;
+.section-events-content__box {
+  text-align: center;
 }
-.footer-content__box .title {
+.section-events-content__box .title {
   font-family: 'GothamPro-bold', sans-serif;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.4rem;
   font-size: 2.4rem;
 }
-.footer-content__box .list li {
+.section-events-content__box .subtitle {
   font-family: 'GothamPro-light', sans-serif;
-  margin-bottom: 0.7rem;
-  color: #f3f3f3;
-  font-size: 1.4rem;
+  margin-bottom: 9rem;
 }
-.footer-content__box:first-child .list li {
-  margin-bottom: 2.1rem;
+.section-events-content__box .description {
+  font-family: 'GothamPro-light', sans-serif;
+  width: 80%;
+  height: 4.3rem;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+}
+.section-events-content__box img {
+  margin-top: 7rem;
+  margin-left: 0.2rem;
+}
+/* блок отзывы слайдер*/
+.section-reviews__title {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+.section-reviews-content__box {
+  text-align: center;
+}
+.section-reviews-content__box img {
+  margin-bottom: 3rem;
+  margin-left: 0.2rem;
+}
+.section-reviews-content__box .title {
+  font-family: 'GothamPro-bold', sans-serif;
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+}
+.section-reviews-content__box .subtitle {
+  margin-bottom: 4rem;
+}
+.section-reviews-content__box .description {
+  font-family: 'GothamPro-light', sans-serif;
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.4rem;
 }

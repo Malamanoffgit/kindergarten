@@ -1,0 +1,22 @@
+/* шапка сайта */
+.section-top {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 1000;
+}
+.section-top .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+.section-top .header .navigation .toggle-menu {
+  display: none;
+}
+.section-top .header .navigation-menu {
+  display: flex;
+}
+.section-top .header .navigation-menu li {
+  margin-left: 3.5rem;
+}

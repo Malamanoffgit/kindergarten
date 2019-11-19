@@ -1,0 +1,40 @@
+/* подвал сайта*/
+.footer{
+ background: @color-text-bg;
+     &-content{
+         display: flex;
+         justify-content: space-between;
+             &__box{
+                 color: @white;
+                     .title{
+                         .text-bold();
+                         margin-bottom: 1.8rem;
+                         font-size: 2.4rem;
+                     }
+                     .list{
+
+                         li{
+                             .text-light();
+                             margin-bottom: 0.7rem;
+                             color: @background-block;
+                             font-size: 1.4rem;
+                             
+                         }
+                     }
+                 &:first-child{
+
+                     .list{
+                          
+                           li{
+                             margin-bottom: 2.1rem;
+                              
+                            }
+                         }
+                     }
+                 }
+             }
+     }
+}
+.map{
+ 
+}

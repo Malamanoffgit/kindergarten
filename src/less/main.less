@@ -1,8 +1,8 @@
 @import "fonts.less";
 @import "basic_styles.less";
 @import "typography.less";
-@import "events_box.less";
-@import "reviews_box.less";
+@import "header.less";
+@import "footer.less";
 
 .section-top{
     position: fixed;
@@ -43,7 +43,7 @@
             &__description{
                 padding-top: 8rem;
                 padding-left: 6rem;
-            }
+                 }
             &-img{
                img{
                    width: 80%;
@@ -59,7 +59,6 @@
     
 }
 .section-groups{
-
 
     &__title{
         text-align: center;
@@ -122,43 +121,79 @@
                         .description{
                             width: 220px;
                             font-size: 1.8rem;
-                        }
+                     }
                 }
-            }
+         }
 }
-.footer{
-    background: @color-text-bg;
-        &-content{
-            display: flex;
-            justify-content: space-between;
-                &__box{
-                    color: @white;
-                        .title{
-                            .text-bold();
-                            margin-bottom: 1.8rem;
-                            font-size: 2.4rem;
-                        }
-                        .list{
+/* блок events слайдер*/
+.section-events{
 
-                            li{
-                                .text-light();
-                                margin-bottom: 0.7rem;
-                                color: @background-block;
-                                font-size: 1.4rem;
-                                
-                            }
-                        }
-                    &:first-child{
-
-                        .list{
-
-                            li{
-                                margin-bottom: 2.1rem;
-                                    
-                            }
-                        }
-                    }
-                }
+    &__title{
+      text-align: center;
+      margin-bottom: 12rem;
+    }
+    &-content{
+      position: relative;
+ 
+      &__box{
+       text-align: center;
+ 
+        .title{
+          .text-bold();
+          margin-bottom: 1.4rem;
+          font-size: 2.4rem;
         }
-}
+        .subtitle{
+          .text-light();
+          margin-bottom: 9rem;
+        }
+        .description{
+          .text-light();
+          width: 80%;
+          height: 4.3rem;
+          margin: 0 auto;
+          font-size: 1.4rem;
+          line-height: 1.5rem;
+        }
+        img{
+         margin-top: 7rem;
+         margin-left: 0.2rem;
+        }
+      }
+    }
+ }
+/* блок отзывы слайдер*/
+.section-reviews{
+
+    &__title{
+     text-align: center;
+     margin-bottom: 8rem;
+    }
+     &-content{
+  
+       &__box{
+        text-align: center;
+          img{
+            margin-bottom: 3rem;
+            margin-left: 0.2rem;
+          }
+          .title{
+           .text-bold();
+            margin-bottom: 2rem;
+            font-size: 2.4rem;
+          }
+          .subtitle{
+           margin-bottom: 4rem;
+          }
+          .description{
+           .text-light();
+           width: 80%;
+           margin: 0 auto;
+           text-align: left;
+           font-size: 1.4rem;
+          }
+       }
+     }
+  }
+
 
