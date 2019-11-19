@@ -2,12 +2,12 @@
 @import "basic_styles.less";
 @import "typography.less";
 @import "header.less";
-@import "footer.less";
+
 
 .section-top{
     position: fixed;
     width: 100%;
-    background: #fff;
+    //background: ;
     z-index: 1000;
 
         .header{
@@ -17,21 +17,22 @@
             padding: 0 1rem;
 
             .navigation{
-
-                .toggle-menu{
-                    display: none;
-                }
-                &-menu{
-                    display: flex;
-                    
-                    li{
-                        margin-left: 3.5rem;
-                    }
+                .nav-menu-active{
+                    left: 0;
+                  
+                      li{
+                       margin-bottom: 25px;
+                      }
+                      a{
+                       color: #fff;
+                       font-size: 25px;
+                       text-decoration: none;
+                       text-transform: uppercase;
+                      }
+                   }
                 }
             }
             
-        }
-}
 .main{
     background: @background-block;
         &-content{
@@ -40,12 +41,12 @@
             margin-top: 15rem;
 
             &__description{
-                padding-top: 8rem;
+                padding-top: 5rem;
                 padding-left: 6rem;
                  }
             &-img{
                img{
-                   width: 80%;
+                  // width: 80%;
                }
             }
         }
@@ -67,15 +68,18 @@
     &__content{
         display: flex;
         flex-wrap: wrap;
-        padding: 0 2rem;
+        //padding: 0 2rem;
 
         .childrens-group{
             display: flex;
             padding: 40px 0;
             margin: 15px;
             width: calc(50% - 30px);
-            -webkit-transition: .5s;
-            transition: .5s;
+            border-radius: 2rem;
+            &:hover{
+                box-shadow:0px 0px 36px 0px rgba(13,13,13,0.57);
+                transition: all 0.7s;
+            }
             &:nth-child(even){
                 justify-content: flex-end;
             }
@@ -194,6 +198,17 @@
        }
      }
   }
+
+
+
+
+
+  @import "footer.less";
+  @import "media.less";
+
+
+
+
   
 
 

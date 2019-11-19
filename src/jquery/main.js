@@ -1,6 +1,24 @@
 
 
 $(document).ready(function(){
+let menu = $('.toggle-menu'),
+    active = $('.toggle-menu-active'),
+    navMenu = $('.navigation-menu');
+
+    menu.click(function(){
+      menu.toggleClass('toggle-menu-active');
+      navMenu.toggleClass('nav-menu-active');
+
+      active.click(function(){
+        menu.removeClass('toggle-menu-active')
+      });
+    });
+
+
+
+
+
+
  $('.owl-carousel').slick({  
        slidesToShow: 2,
        prevArrow: '<button class="prev"></button>',
@@ -9,7 +27,17 @@ $(document).ready(function(){
        adaptiveHeight: true,
        responsive: [
            {
-             breakpoint: 1180,
+             breakpoint: 1190,
+             settings: {
+               dots: true,
+               slidesToShow: 2,
+               arrows: false,
+               slidesToScroll: 2,
+               adaptiveHeight: true
+             }
+            },
+            {
+             breakpoint: 990,
              settings: {
                dots: true,
                slidesToShow: 1,

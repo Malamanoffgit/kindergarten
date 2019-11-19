@@ -42,8 +42,8 @@ footer {
   z-index: 99;
   border: none;
   position: absolute;
-  top: 50%;
-  left: -4%;
+  top: 40%;
+  left: -3%;
   background: url(../img/slick-img/slick-btn/prev.png) center no-repeat;
   outline: none;
 }
@@ -53,8 +53,9 @@ footer {
   z-index: 99;
   border: none;
   position: absolute;
-  top: 50%;
-  right: -4%;
+  top: 40%;
+  right: -2.5%;
   background: url(../img/slick-img/slick-btn/next.png) center no-repeat;
   outline: none;
 }
+/*для бургер меню*/

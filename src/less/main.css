@@ -64,8 +64,8 @@ footer {
   z-index: 99;
   border: none;
   position: absolute;
-  top: 50%;
-  left: -4%;
+  top: 40%;
+  left: -3%;
   background: url(../img/slick-img/slick-btn/prev.png) center no-repeat;
   outline: none;
 }
@@ -75,11 +75,12 @@ footer {
   z-index: 99;
   border: none;
   position: absolute;
-  top: 50%;
-  right: -4%;
+  top: 40%;
+  right: -2.5%;
   background: url(../img/slick-img/slick-btn/next.png) center no-repeat;
   outline: none;
 }
+/*для бургер меню*/
 /* миксины шрифтов */
 /* цвета */
 /* типографика */
@@ -181,44 +182,9 @@ h2:hover:before {
 .section-top .header .navigation-menu li {
   margin-left: 3.5rem;
 }
-/*подвал страницы*/
-.footer {
-  background: #212121;
-}
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-}
-.footer-content__box {
-  color: #ffffff;
-}
-.footer-content__box .title {
-  margin-bottom: 1.8rem;
-  font-size: 2.4rem;
-}
-.footer-content__box .list li {
-  font-family: 'GothamPro-light', sans-serif;
-  margin-bottom: 1rem;
-  color: #f3f3f3;
-  font-size: 1.4rem;
-}
-.footer-content__box:first-child .footer-icon {
-  display: flex;
-  align-items: center;
-}
-.footer-content__box:first-child .footer-icon img {
-  margin-right: 1.4rem;
-}
-.footer-content__box:first-child .footer-icon span {
-  font-size: 1.4rem;
-}
-.footer-content__box:first-child .footer-icon:nth-child(-n+3) {
-  margin-bottom: 1.5rem;
-}
 .section-top {
   position: fixed;
   width: 100%;
-  background: #fff;
   z-index: 1000;
 }
 .section-top .header {
@@ -227,14 +193,17 @@ h2:hover:before {
   align-items: center;
   padding: 0 1rem;
 }
-.section-top .header .navigation .toggle-menu {
-  display: none;
+.section-top .header .navigation .nav-menu-active {
+  left: 0;
 }
-.section-top .header .navigation-menu {
-  display: flex;
+.section-top .header .navigation .nav-menu-active li {
+  margin-bottom: 25px;
 }
-.section-top .header .navigation-menu li {
-  margin-left: 3.5rem;
+.section-top .header .navigation .nav-menu-active a {
+  color: #fff;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 .main {
   background: #f3f3f3;
@@ -245,11 +214,8 @@ h2:hover:before {
   margin-top: 15rem;
 }
 .main-content__description {
-  padding-top: 8rem;
+  padding-top: 5rem;
   padding-left: 6rem;
-}
-.main-content-img img {
-  width: 80%;
 }
 .main-title {
   margin-bottom: 5.8rem;
@@ -264,15 +230,17 @@ h2:hover:before {
 .section-groups__content {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 2rem;
 }
 .section-groups__content .childrens-group {
   display: flex;
   padding: 40px 0;
   margin: 15px;
   width: calc(50% - 30px);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  border-radius: 2rem;
+}
+.section-groups__content .childrens-group:hover {
+  box-shadow: 0px 0px 36px 0px rgba(13, 13, 13, 0.57);
+  transition: all 0.7s;
 }
 .section-groups__content .childrens-group:nth-child(even) {
   justify-content: flex-end;
@@ -373,4 +341,105 @@ h2:hover:before {
   margin: 0 auto;
   text-align: left;
   font-size: 1.4rem;
+}
+/*подвал страницы*/
+.footer {
+  background: #212121;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-content__box {
+  color: #ffffff;
+}
+.footer-content__box .title {
+  margin-bottom: 1.8rem;
+  font-size: 1.8rem;
+}
+.footer-content__box .list li {
+  font-family: 'GothamPro-light', sans-serif;
+  margin-bottom: 1rem;
+  color: #f3f3f3;
+  font-size: 1.2rem;
+}
+.footer-content__box:first-child .footer-icon {
+  display: flex;
+  align-items: center;
+}
+.footer-content__box:first-child .footer-icon img {
+  margin-right: 1.4rem;
+}
+.footer-content__box:first-child .footer-icon span {
+  font-size: 1.2rem;
+}
+.footer-content__box:first-child .footer-icon:nth-child(-n+3) {
+  margin-bottom: 1.5rem;
+}
+/* медиа запросы (адаптивность)*/
+@media (max-width: 1120px) {
+  .section-events-content__box img {
+    margin-left: 0;
+  }
+}
+@media (max-width: 989px) {
+  .main-content {
+    margin-top: 5rem;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  .main-content__description {
+    padding: 0;
+  }
+  .main-content__description .main-title {
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+  }
+  .section-events__title,
+  .section-reviews__title {
+    margin-bottom: 10rem;
+  }
+  .section-events-content__box .subtitle {
+    margin-bottom: 3rem;
+  }
+  .section-events-content__box .description {
+    margin-bottom: 2rem;
+  }
+  .section-events-content__box img {
+    margin: 0 auto;
+  }
+  .section-reviews-content__box img {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 760px) {
+  .section-top .header .navigation > .toggle-menu {
+    display: block;
+  }
+  .navigation-menu {
+    transition: all 0.7s;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: -100vw;
+  }
+  .menu-active {
+    left: 0;
+  }
+  .menu-active li {
+    margin-bottom: 25px;
+  }
+  .menu-active a {
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
 }
