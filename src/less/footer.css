@@ -1,0 +1,34 @@
+/*подвал страницы*/
+.footer {
+  background: #212121;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-content__box {
+  color: #ffffff;
+}
+.footer-content__box .title {
+  margin-bottom: 1.8rem;
+  font-size: 2.4rem;
+}
+.footer-content__box .list li {
+  font-family: 'GothamPro-light', sans-serif;
+  margin-bottom: 1rem;
+  color: #f3f3f3;
+  font-size: 1.4rem;
+}
+.footer-content__box:first-child .footer-icon {
+  display: flex;
+  align-items: center;
+}
+.footer-content__box:first-child .footer-icon img {
+  margin-right: 1.4rem;
+}
+.footer-content__box:first-child .footer-icon span {
+  font-size: 1.4rem;
+}
+.footer-content__box:first-child .footer-icon:nth-child(-n+3) {
+  margin-bottom: 1.5rem;
+}

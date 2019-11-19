@@ -181,7 +181,7 @@ h2:hover:before {
 .section-top .header .navigation-menu li {
   margin-left: 3.5rem;
 }
-/* подвал сайта*/
+/*подвал страницы*/
 .footer {
   background: #212121;
 }
@@ -193,18 +193,27 @@ h2:hover:before {
   color: #ffffff;
 }
 .footer-content__box .title {
-  font-family: 'GothamPro-bold', sans-serif;
   margin-bottom: 1.8rem;
   font-size: 2.4rem;
 }
 .footer-content__box .list li {
   font-family: 'GothamPro-light', sans-serif;
-  margin-bottom: 0.7rem;
+  margin-bottom: 1rem;
   color: #f3f3f3;
   font-size: 1.4rem;
 }
-.footer-content__box:first-child .list li {
-  margin-bottom: 2.1rem;
+.footer-content__box:first-child .footer-icon {
+  display: flex;
+  align-items: center;
+}
+.footer-content__box:first-child .footer-icon img {
+  margin-right: 1.4rem;
+}
+.footer-content__box:first-child .footer-icon span {
+  font-size: 1.4rem;
+}
+.footer-content__box:first-child .footer-icon:nth-child(-n+3) {
+  margin-bottom: 1.5rem;
 }
 .section-top {
   position: fixed;

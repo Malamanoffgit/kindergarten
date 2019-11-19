@@ -1,4 +1,20 @@
-/* подвал сайта*/
+/*подвал страницы*/
+@color-text-bg: #212121;
+@background-block: #f3f3f3;
+@background-btn: #61c0bf;
+@white: #ffffff;
+@bnt-hover:  #ffc34b;
+
+.text-bold(){
+ font-family: 'GothamPro-bold', sans-serif;
+}
+.text-light(){
+ font-family: 'GothamPro-light', sans-serif;
+}
+.text-reg(){
+ font-family: 'GothamPro-reg', sans-serif;
+}
+
 .footer{
  background: @color-text-bg;
      &-content{
@@ -7,15 +23,14 @@
              &__box{
                  color: @white;
                      .title{
-                         .text-bold();
+                         //.text-bold();
                          margin-bottom: 1.8rem;
                          font-size: 2.4rem;
                      }
                      .list{
-
                          li{
                              .text-light();
-                             margin-bottom: 0.7rem;
+                             margin-bottom: 1rem;
                              color: @background-block;
                              font-size: 1.4rem;
                              
@@ -23,18 +38,22 @@
                      }
                  &:first-child{
 
-                     .list{
-                          
-                           li{
-                             margin-bottom: 2.1rem;
-                              
-                            }
+                     .footer-icon{
+                         display: flex;
+                         align-items: center;
+
+                         img{
+                             margin-right: 1.4rem;
+                         }
+                         span{
+                             font-size: 1.4rem;
+                         }
+                         &:nth-child(-n+3){
+                             margin-bottom: 1.5rem;
                          }
                      }
+
                  }
              }
      }
-}
-.map{
- 
 }
