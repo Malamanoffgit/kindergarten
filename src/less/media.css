@@ -46,6 +46,7 @@
   }
   .section-top .header .navigation > .toggle-menu {
     display: block;
+    right: 20%;
   }
   .navigation-menu {
     transition: all 0.7s;
@@ -65,7 +66,7 @@
   }
   .navigation-menu a {
     color: #61c0bf;
-    font-size: 5rem;
+    font-size: 4rem;
     text-decoration: none;
     text-transform: uppercase;
   }
@@ -105,5 +106,10 @@
   .footer-content__box {
     width: 134px;
     margin: 2rem;
+  }
+}
+@media (max-width: 380px) {
+  .container {
+    overflow: auto;
   }
 }

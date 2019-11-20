@@ -1,23 +1,6 @@
 
 
 $(document).ready(function(){
-let menu = $('.toggle-menu'),
-    active = $('.toggle-menu-active'),
-    navMenu = $('.navigation-menu');
-
-    menu.click(function(){
-      menu.toggleClass('toggle-menu-active');
-      navMenu.toggleClass('nav-menu-active');
-
-      active.click(function(){
-        menu.removeClass('toggle-menu-active')
-      });
-    });
-
-
-
-
-
 
  $('.owl-carousel').slick({  
        slidesToShow: 2,
@@ -47,4 +30,18 @@ let menu = $('.toggle-menu'),
            }
        ]
      });
+
+
+     let menu = $('.toggle-menu'),
+    active = $('.toggle-menu-active'),
+    navMenu = $('.navigation-menu');
+
+    menu.click(function(){
+      menu.toggleClass('toggle-menu-active');
+      navMenu.toggleClass('nav-menu-active');
+
+      active.click(function(){
+        menu.removeClass('toggle-menu-active')
+      });
+    });
 });

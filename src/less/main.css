@@ -53,7 +53,6 @@ footer {
 .container {
   max-width: 1140px;
   margin: 0 auto;
-  overflow: auto;
 }
 /*слайдер slick*/
 .slick-active {
@@ -465,6 +464,7 @@ h2:hover:before {
   }
   .section-top .header .navigation > .toggle-menu {
     display: block;
+    right: 20%;
   }
   .navigation-menu {
     transition: all 0.7s;
@@ -484,7 +484,7 @@ h2:hover:before {
   }
   .navigation-menu a {
     color: #61c0bf;
-    font-size: 5rem;
+    font-size: 4rem;
     text-decoration: none;
     text-transform: uppercase;
   }
@@ -524,5 +524,10 @@ h2:hover:before {
   .footer-content__box {
     width: 134px;
     margin: 2rem;
+  }
+}
+@media (max-width: 380px) {
+  .container {
+    overflow: auto;
   }
 }
